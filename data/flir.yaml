@@ -1,0 +1,20 @@
+# FLIR 
+# Train command: python train.py --data flir128.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /flir128
+#     /yolov5
+
+
+# download command/URL (optional)
+# download: https://github.com/usmank13/PACCAR-capstone/raw/main/FLIR_128.zip
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../drive/MyDrive/images/train_flir  # 128 images
+val: ../drive/MyDrive/images/val_flir  # 128 images
+
+# number of classes
+nc: 3
+
+# class names
+names: [ 'person', 'bicycle', 'car']
